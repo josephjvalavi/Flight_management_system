@@ -10,118 +10,171 @@
     <!-- Bootstrap CSS v5.2.1 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-<style>
+    <style>
+        .navi {
+            display: flex;
+            flex-direction: column;
+            width: 100vw;
+        }
 
-.navi{
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-}
-.img{
-    width: 100vw;
-    height: 60vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-body{
-    background-image: url(https://media.istockphoto.com/id/1192648836/photo/young-happy-woman-in-an-airplane-cabin.jpg?s=612x612&w=0&k=20&c=KZ_iDYPrsN_Mr3cEMPIxqN1TN0EzedOEwWZIstsWhXw=);
-    background-repeat: no-repeat;
-    background-size: cover; 
+        .img {
+            width: 100vw;
+            height: 60vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
-}   
-.but{
-    position: absolute;
-    left: 50vw;
-    top: 70vh;
-}
-.head{
-    color: rgb(88, 156, 116);
-    position: absolute;
-    top: 50vh;
-    left: 20vw;
-}
-.foot{
-    width: 100vw;
-    height: 50vh;
-    background-color: rgb(28, 27, 27);
-    position: absolute;
-    top: 150vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    
-}
-h1{
-    color:  rgb(34,193,195);
-color:  linear-gradient(0deg, rgb(26, 191, 194) 0%, rgba(45,109,253,1) 100%);;
-}
-h3{
-    color: brown;
+        body {
+            background-image: url(https://media.istockphoto.com/id/1192648836/photo/young-happy-woman-in-an-airplane-cabin.jpg?s=612x612&w=0&k=20&c=KZ_iDYPrsN_Mr3cEMPIxqN1TN0EzedOEwWZIstsWhXw=);
+            background-repeat: no-repeat;
+            background-size: cover;
 
-}
-li{
-    color: azure;
-}
-u{
-    
-}
-.parent{
-    height: 50vh;
-    width: 100vw;
-    position: absolute;
-    top: 100vh;
-    background: rgb(34,193,195);
-background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,109,253,1) 100%);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+        }
 
-}
-.p1{
-    width: 31vw;
-    height:35vh;
-    justify-content: center;
-    align-items: center;
-}
-</style>
+        .but {
+            position: absolute;
+            left: 50vw;
+            top: 70vh;
+        }
+
+        .head {
+            color: rgb(88, 156, 116);
+            position: absolute;
+            top: 50vh;
+            left: 20vw;
+        }
+
+        .foot {
+            width: 100vw;
+            height: 50vh;
+            background-color: rgb(28, 27, 27);
+            position: absolute;
+            top: 230vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+
+        }
+
+        .nav-link {
+            color: brown;
+            font-size: larger;
+            font-weight: 25%;
+        }
+
+        h1 {
+            color: rgb(34, 193, 195);
+            color: linear-gradient(0deg, rgb(26, 191, 194) 0%, rgba(45, 109, 253, 1) 100%);
+            ;
+        }
+
+        h3 {
+            color: brown;
+
+        }
+
+        h2 {
+            color: azure;
+            text-align: center;
+        }
+
+        li {
+            color: azure;
+        }
+
+        u {}
+
+        .parent {
+            height: 80vh;
+            width: 100vw;
+            position: absolute;
+            top: 100vh;
+            background: rgb(34, 193, 195);
+            background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(45, 109, 253, 1) 100%);
+            display: flex;
+
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .p1 {
+            width: 100vw;
+            height: 35vh;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .pic {
+            width: 100vw;
+            position: absolute;
+            top: 1100px;
+            height: 50vh;
+            color: rgb(169, 27, 105);
+            font-size: 25px;
+            background-image: url(https://media.istockphoto.com/id/1042534060/vector/airplane-line-path-vector-icon-of-air-plane-flight-route-with-start-point-and-dash-line-trace.jpg?s=612x612&w=0&k=20&c=CVvNI5POK0xOL8EXO7-mqH9PgGNTG_LQ4DWjaBiewZo=)
+            
+        }
+    </style>
 </head>
 
 <body>
-    
+
     <header>
         <!-- place navbar here -->
     </header>
     <main>
-        <div class="navi" >
-            <nav class="nav nav-pills flex-row" >
-                <a class="nav-link " href="#" aria-current="page" style="font-family: times new roman;font-size:20px;color: brown;"><b>JETWAY</b></a>
+        <div class="navi">
+            <nav class="nav nav-pills flex-row">
+                <a class="nav-link " href="flight.html" aria-current="page"
+                    style="font-family: times new roman;font-size:20px;color: brown;"><b>JETWAY</b></a>
                 <a class="nav-link" href="#">About us</a>
                 <a class="nav-link " href="#">Services</a>
-                <a class="nav-link " href="#" style="justify-content: flex-end;">SignUp</a>
-    
+                <a class="nav-link " href="signup.html" style="justify-content: flex-end;">SignUp</a>
+
             </nav>
         </div>
-        <div class="head"><h1><b>JETWAY YOUR TRAVEL COMPANION</b></h1></div>
+        <div class="head">
+            <h1><b>JETWAY YOUR TRAVEL COMPANION</b></h1>
+        </div>
         <div class="but">
-            <a name="" id="" class="btn btn-danger " href="#" role="button" style="border:2px solid white ;border-radius:8px;">LOGIN</a>
+            <a name="" id="" class="btn btn-danger " href="login.html" role="button"
+                style="border:2px solid white ;border-radius:8px;">LOGIN</a>
         </div>
         <div class="parent">
+
+
             <div class="p1">
-                
-                
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjq-7OpRr-TIwSoQiUPAlSHNsXiGV-Ft9fw&usqp=CAU" alt="">
-                <h2>INternational</h2>
+
+
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvjq-7OpRr-TIwSoQiUPAlSHNsXiGV-Ft9fw&usqp=CAU"
+                    alt="">
+                <h2>International</h2>
             </div>
             <div class="p1">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1otBkTkgAAzS_8wD6hL-IOmjfGVjQWcNwKw&usqp=CAU" alt="">
-                <h2>INternational</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1otBkTkgAAzS_8wD6hL-IOmjfGVjQWcNwKw&usqp=CAU"
+                    alt="">
+                <h2>Cargo</h2>
             </div>
             <div class="p1">
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0y6iSXW6JkHywx_U2LekYs94QMxIlPjZiJw&usqp=CAU" alt="">
-                <h2>INternational</h2>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0y6iSXW6JkHywx_U2LekYs94QMxIlPjZiJw&usqp=CAU"
+                    alt="">
+                <h2>Domestic</h2>
             </div>
         </div>
-        
+        <div class="pic">
+            
+            <p>Etihad Airways is Certified as a 4-Star Airline for the quality of its airport and onboard product and
+                staff service. Product rating includes seats, amenities, food & beverages, IFE, cleanliness etc, and
+                service rating is for both cabin staff and ground staff.</p>
+        </div>
+        </div>
+
+
         <div class="foot">
             <div class="list">
                 <h3><u>Services</u></h3>
@@ -129,8 +182,8 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,109,253,1) 100%
                     <li>International</li>
                     <li>Domestic</li>
                     <li>Cargo</li>
-                    <li>Charted</li>
-                    
+
+
                 </ul>
             </div>
             <div class="list">
@@ -139,39 +192,39 @@ background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(45,109,253,1) 100%
                     <li>Asia pacific</li>
                     <li>Europe</li>
                     <li>Australia</li>
-                    
+
                 </ul>
             </div>
-                <div class="list">
-                    <h3><u>Comapany</u></h3>
-                    <ul>
-                    
+            <div class="list">
+                <h3><u>Comapany</u></h3>
+                <ul>
 
 
 
-                        <li>Terms of use</li>
-                        <li>Privacy Policy</li>
-                        <li>Cookie Policy</li>
-                        
-                    </ul>
-                </div>
-                <div class="list">
-                    <h3><u>contact Us</u></h3>
-                    <ul>
-                        <li>india</li>
-                        <li>956766554</li>
-                        <li>Email:kojuuyvw2gamail</li>
-                        
-                    </ul>
-                </div>
+
+                    <li>Terms of use</li>
+                    <li>Privacy Policy</li>
+                    <li>Cookie Policy</li>
+
+                </ul>
+            </div>
+            <div class="list">
+                <h3><u>contact Us</u></h3>
+                <ul>
+                    <li>india</li>
+                    <li>956766554</li>
+                    <li>Email:kojuuyvw2gamail</li>
+
+                </ul>
+            </div>
 
 
         </div>
-        
+
 
 
     </main>
-    
+
     <footer>
         <!-- place footer here -->
     </footer>
